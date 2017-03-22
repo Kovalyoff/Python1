@@ -11,5 +11,5 @@ node {
    }
    stage('deploy') {
            build job: 'deploy', propagate: false
-  }
+   }
 }
