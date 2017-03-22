@@ -1,5 +1,3 @@
-jenkins ######################
-
 node {
    stage('test') {
        build job: 'test', propagate: false
