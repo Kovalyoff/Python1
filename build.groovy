@@ -1,1 +1,1 @@
-cp /var/lib/jenkins/jobs/Python1/build/workspace/hello.py /var/lib/jenkins/jobs/Python1/deploy
+cp /var/lib/jenkins/workspace/Python/build/hello.py /var/lib/jenkins/workspace/Python/deploy
