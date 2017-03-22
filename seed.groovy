@@ -1,4 +1,4 @@
-seed #########################
+seed 
 
 #!groovy
 
@@ -6,18 +6,18 @@ import groovy.io.FileType
 import hudson.FilePath
 import hudson.*
 
-def folderName = 'Python'#####################
-def giturl = 'https://github.com/Kovalyoff/Python1.git'###########################
+def folderName = 'Python'
+def giturl = 'https://github.com/Kovalyoff/Python1.git'
 
 folder(folderName) {
-    displayName('Python')##################
-    description('Folder for Python')#######################
+    displayName('Python')
+    description('Folder for Python')
 }
 
 pipelineJob("${folderName}/${folderName}-pipeline") {
     definition {
         cps {
-            script(readFileFromWorkspace('jenkinsfile'))#################
+            script(readFileFromWorkspace('jenkinsfile'))
             sandbox()
         }
     }
