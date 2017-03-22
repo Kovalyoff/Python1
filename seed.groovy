@@ -1,5 +1,3 @@
-seed 
-
 #!groovy
 
 import groovy.io.FileType
